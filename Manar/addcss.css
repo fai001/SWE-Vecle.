@@ -1,0 +1,397 @@
+
+body {
+
+    min-height: 100vh;
+    background-color: #5faab9;
+	background-size: cover;
+    background-repeat: no-repeat;
+   
+
+}
+
+form {
+  box-shadow:1px 5px 20px 10px black;
+    background-color:white;
+    width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+	border-radius:25px;
+}
+h1{
+margin-bottom:-12%;
+margin-top: 5%;
+ text-align: center;
+ color:white;
+}
+.flexform {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	font-family:'Poppins',sans-serif;
+}
+
+/*input{
+padding:15px 0;
+	
+	margin:20px 10px;
+	border-radius:25px;
+	
+	border:2px solid black ;
+	
+}*/
+.navbar{
+	width:85%;
+	margin:auto;
+	padding:35px 0;
+	align-items:center;
+	display:flex;
+	justify-content:space-between;
+}
+.logo{
+	width:120px;
+	cursor:pointer;
+}
+
+.navbar ul li{
+	list-style:none;
+	display:inline-block;
+	margin:0 20px;
+	position:relative;
+	
+}
+.navbar ul li a{
+	text-decoration:none;
+	color:#5faab9;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content:'';
+	height:3px;
+	width:0;
+	background:#5faab9;
+	position:absolute;
+	left:0;
+	bottom:-8px;
+	transition:0.5s;
+}
+.navbar ul li:hover::after{
+	width:100%;
+	
+}
+
+footer{
+	position:relative;
+	width:100%;
+	background:white;
+	min-height:100px;
+	padding:20px 0px;
+	display:flex;
+	justify-content:center;
+	align-items:center; 
+	flex-direction:column;
+}
+footer .social_icon,footer .menu{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:10px 0;
+	flex-wrap:wrap;
+}
+
+footer .social_icon li,footer .menu li{
+	list-style:none;
+	
+}
+footer .social_icon li a{
+	font-size:2em;
+	color:#5faab9;
+	margin:0 10px;
+	display:inline-block;
+	transition:0.5s;
+	
+}
+footer .social_icon li a:hover{
+	transform: translateY(-10px);
+}
+footer .menu li a{
+	font-size:1.2em;
+	color:#5faab9;
+	margin:0 10px;
+	display:inline-block;
+	transition:0.5s;
+	text-decoration:none;
+	opacity:0.75;
+	
+}
+footer .menu li a:hover{
+	opacity:1;
+}
+
+footer p{
+	color:#5faab9;
+	text-align:center;
+	margin-top:15px;
+	margin-bottom:10px;
+	font-size:1.1em;
+}
+
+button{
+	width:200px;
+	padding:15px 0;
+	text-align:center;
+	margin:20px 10px;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid white;
+	background:transparent;
+	color:white;
+	cursor:pointer;
+	position:relative;
+	overflow:hidden;
+}
+span{
+	background: black;
+	height:100%;
+	width:0;
+	border-radius:25px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:-1;
+	transition:0.5s;
+}
+button:hover span{
+	width:100%;
+}
+button:hover{
+	border:none;
+	
+}
+.butt{
+	margin-top:2%;
+text-align:center;	
+}
+
+
+.banner {
+width : 100%;
+height : 170px;
+background-color: white;
+background-size : cover;
+background-position : center;
+}
+.navbar {
+width : 85%;
+margin : auto;
+padding : 35px 0;
+align-items : center;
+display : flex;
+justify-content : space-between;
+}
+.logo {
+width : 110px;
+cursor : pointer;
+}
+.navbar ul li {
+list-style : none;
+display : inline-block;
+margin : 0 20px;
+position : relative;
+}
+.navbar ul li a {
+text-decoration : none;
+color : #5faab9;
+text-transform : uppercase;
+}
+.navbar ul li::after {
+content : '';
+height : 3px;
+width : 0;
+background : #5faab9;
+position : absolute;
+left : 0;
+bottom : -8px;
+transition : 0.5s;
+}
+.navbar ul li:hover::after {
+width : 100%;
+}
+
+
+
+.rwd-table {
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.rwd-table tr:first-child {
+  border-top: none;
+  background: black;
+  color: #fff;
+}
+
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+  background-color: white;
+}
+
+.rwd-table th {
+  display: none;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:first-child {
+  margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.rwd-table {
+  color: black;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.rwd-table tr {
+  border-color: #bfbfbf;
+}
+
+.rwd-table th,
+.rwd-table td {
+  padding: .5em 1em;
+}
+@media screen and (max-width: 601px) {
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .rwd-table tr:hover:not(:first-child) {
+    background-color: #d8e7f3;
+  }
+  .rwd-table td:before {
+    display: none;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+
+/* THE END OF THE IMPORTANT STUFF */
+
+/* Basic Styling */
+
+h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: #f2f2f2;
+}
+.container {
+  display: block;
+  text-align: center;
+  padding-bottom:87px;
+}
+h3 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: #cecece;
+}
+h3:before {
+  content: "\25C0";
+  position: absolute;
+  left: -50px;
+  -webkit-animation: leftRight 2s linear infinite;
+  animation: leftRight 2s linear infinite;
+}
+h3:after {
+  content: "\25b6";
+  position: absolute;
+  right: -50px;
+  -webkit-animation: leftRight 2s linear infinite reverse;
+  animation: leftRight 2s linear infinite reverse;
+}
+@-webkit-keyframes leftRight {
+  0%    { -webkit-transform: translateX(0)}
+  25%   { -webkit-transform: translateX(-10px)}
+  75%   { -webkit-transform: translateX(10px)}
+  100%  { -webkit-transform: translateX(0)}
+}
+@keyframes leftRight {
+  0%    { transform: translateX(0)}
+  25%   { transform: translateX(-10px)}
+  75%   { transform: translateX(10px)}
+  100%  { transform: translateX(0)}
+}
+
+/*
+    Don't look at this last part. It's unnecessary. I was just playing with pixel gradients... Don't judge.
+*/
+/*
+@media screen and (max-width: 601px) {
+  .rwd-table tr {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+  }
+  .rwd-table tr:nth-child(odd) {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+  }
+}*/
